@@ -1,0 +1,583 @@
+* {
+    margin: 0px;
+}
+body{
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+.owl-wrapper-outer {
+	border-radius: 5px;
+	overflow: hidden;
+	background: white;
+}
+
+/* 1 квадратик карусели */
+.carousel-element {
+	padding: 30px;
+	text-align: center;
+	font-size: 300%;
+	border-right: 0px solid #777;
+}
+/*header styles*/
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/navBackgroundImage.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 800px;
+}
+.headerTopDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #2e2d2d;;
+}
+
+.headerNavLogo{
+    display: inline-block;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+.headerLogo {
+    width: 9em;
+}
+
+.navigation {
+    margin-left: auto;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+li {
+    display: inline-block;
+}
+
+.navigation a {
+    margin: 0 25px;
+    text-decoration: none;
+    font-size: 0.80rem;
+    color: #b6b0b0;
+}
+
+/*Search Form Styles*/
+form {
+    position: relative;
+    width: 30px;
+    height: 42px;
+  }
+  #searchInput {
+    height: 42px;
+    width: 0;
+    padding: 0 42px 0 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+  #searchInput:focus {
+    width: 300px;
+    z-index: 2;
+    border-bottom: 2px solid #F9F0DA;
+    background-color: #2e2d2d;
+    color: #b6b0b0;
+  }
+  .searchButton {
+    background: #2e2d2d;
+    border: none;
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  .searchButton:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #b6b0b0;
+  }
+
+.navGuitarName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    margin: 350px 100px 0 0;
+    background-color: #2e2d2d;
+    opacity: 0.5;
+    color: aliceblue;
+    border-radius: 50%;
+}
+
+.navGuitarName h2 {
+    font-size: 4rem;
+}
+
+.navGuitarName p {
+    font-size: 1.5rem;
+}
+
+/*Main content styles*/
+
+
+.carouselHeader{
+    display: flex;
+    margin: 20px 0px;
+}
+.horizontalLines {
+    border: none;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    width: 44%;
+    margin: 0 10px 8px 10px;
+}
+.carouselHeader p   {
+    width: 12%;
+    display: inline-block;
+    text-align: center;
+}
+
+.img-fluid{
+    height: 400px;
+    width: 140px !important;
+}
+
+.item {
+    height: 550px;
+    width: 150px;
+}
+.owl-stage-outer {
+    padding-left: 60px;
+}
+
+
+
+/*MICK THOMSON SOLOIST Styles*/
+
+.mickThomsonSoloist {
+    display: flex;
+    background-image: url("img/mick-feature-bg.jpg");
+    background-size: cover;
+    height: 760px;
+    width: auto;
+}
+
+.mickThomsonSoloistImgDiv {
+    background-image: url("img/misha-models.png");
+    height: auto;
+    width: 60%;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.mickThomsonSoloistContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.mickThomsonSoloistContent h2 {
+    font-size: 2rem;
+    color: aliceblue;
+    margin: 40px 0;
+}
+
+.mickThomsonSoloistContent p {
+    font-size: 1.6rem;
+    color: aliceblue;
+    text-align: center;
+    margin: 80px 0;
+}
+
+.mickThomsonSoloistForm {
+    height: 50px;
+    width: 180px;
+    align-self: flex-end;
+    margin:0 70px 60px 0;
+}
+
+.mickThomsonSoloistButton {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: aliceblue;
+}
+
+/*News Styles*/
+
+.newsHeader {
+    padding: 35px 0;
+    background-color: #2e2d2d;
+    color: aliceblue;
+}
+
+.newsHeader p{
+    width: 10%;
+    display: inline-block;
+    text-align: center;
+}
+
+.newsHeader hr {
+    width: 41%;
+}
+
+.newsContent {
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+}
+
+.newsContent h3 {
+    margin: 0 70px;
+    align-self: center;
+    text-align: center;
+    color: aliceblue;
+}
+
+.newsBloks {
+    display: flex;
+    height: 400px;
+    width: 25%;
+    background-size: cover;
+}
+
+.newsBloks:hover{
+    opacity: 0.8;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#DavidEllefsonBackground {
+    background-image: url("img/David_Ellefson_Bass_Musician_cover.jpg");
+}
+
+#MartyFriedmanBackground {
+    background-image: url("img/Marty_featured.jpg");
+}
+
+#AndertonsMusicBackground {
+    background-image: url("img/Andertons_featured.jpg");
+}
+
+#DavidDavidsonBackground {
+    background-image: url("img/David_Davidson.jpg");
+}
+
+.newsBackgrounds {
+    background-size: cover;
+    background-position: center center;
+}
+
+/*Submit Styles*/
+
+.submitDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    background-color: #2e2d2d;
+}
+
+.submitNav {
+    width: 100%;
+    margin: 40px 0 120px 0;
+    font-size: 1.4rem;
+}
+
+.submitNav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.submitNav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.submitForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 40%;
+    background-color: aliceblue;
+}
+
+#userEmail {
+    width: 100%;
+    padding-left: 10px;
+    border: none;
+}
+
+#userSubmit {
+    margin: 3px 3px;
+    background-color: black;
+    color: aliceblue;
+    border: none;
+}
+
+.address {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.submitLogo {
+    height: 80%;
+    width: 50%;
+}
+
+.address p {
+    align-self: center;
+    text-align: left;
+    font-size: 1.2rem;
+    color: aliceblue;
+    margin-left: 20px;
+}
+
+/* Footer Styles*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: black;
+}
+
+#facebookIcon::before{
+    content: "\f082"; 
+    font-family: FontAwesome;
+    font-weight: 900;
+    font-size: 2.5em;
+    color: aliceblue;
+     
+}
+
+#instagramIcon::before{
+    content: '\f16d';
+    font-family: FontAwesome;
+    font-size: 2.5em;
+    color: aliceblue;
+}
+
+#twitterIcon::before{
+    content: '\f081';
+    font-family: FontAwesome;
+    font-size: 2.5em;
+    color: white;
+}
+
+#youtubeIcon::before{
+    content: '\f167';
+    font-family: FontAwesome;
+    font-size: 2.5em;
+    color: aliceblue;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+}
+
+.footerInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    font-size: 0.9em;
+    margin-right: 20px;
+}
+
+.footerInfo a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.footerVerticalLines {
+    height: 30px;
+    border-left: 1px solid white;
+}
+
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navGuitarName {
+        height: 250px;
+        width: 250px;
+        margin: 350px 75px 0 0;
+    }
+    .navGuitarName h2{
+        font-size: 3.6rem;
+    }
+    .navGuitarName p{
+        font-size: 1.3rem;
+    }
+    .mickThomsonSoloistImgDiv{
+        width: 70%;
+    }
+    .mickThomsonSoloistContent{
+        width: 30%;
+        padding: 0 20px;
+    }
+    .mickThomsonSoloistContent h2{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .mickThomsonSoloistContent p{
+        font-size: 1.4rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .mickThomsonSoloistForm{
+        
+    }
+
+    .submitNav{
+        margin-bottom: 90px;
+    }
+
+    .footerInfo{
+        width: 35%;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navGuitarName {
+        height: 200px;
+        width: 200px;
+        margin: 350px 40px 0 0;
+    }
+    .navGuitarName h2{
+        font-size: 3.3rem;
+    }
+    .navGuitarName p{
+        font-size: 1.1rem;
+    }
+
+    .mickThomsonSoloist {
+        flex-direction: column;
+        min-height: 1300px;
+    }
+    .mickThomsonSoloistImgDiv{
+        height: 100%;
+        width: 100%;
+    }
+    .mickThomsonSoloistContent{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 120px;
+    }
+    .mickThomsonSoloistContent p{
+        margin: 10px 0;
+    }
+
+    .newsContent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .newsBloks  {
+        flex: 1 0 340px;
+        max-width: 500px;
+    }
+    .icons{
+        width: 30%;
+    }
+    .footerInfo{
+        width: 40%;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    .navGuitarName {
+        height: 150px;
+        width: 150px;
+        margin: 430px 20px 0 0;
+    }
+    .navGuitarName h2{
+        font-size: 3rem;
+    }
+    .navGuitarName p{
+        font-size: 0.8rem;
+    }
+    .mickThomsonSoloist {
+        flex-direction: column;
+        min-height: 1300px;
+    }
+    .mickThomsonSoloistImgDiv{
+        height: 100%;
+        width: 100%;
+    }
+    .mickThomsonSoloistContent{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 120px;
+    }
+    .mickThomsonSoloistContent h2{
+        font-size: 1.5rem;
+    }
+    .mickThomsonSoloistContent P{
+        font-size: 1.2rem;
+        margin: 40px 0;
+    }
+    .newsHeader hr{
+        width: 40%;
+    }
+    .newsContent {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .newsBloks  {
+        flex: 1 0 380px;
+        max-width: 740px;
+    }
+    .icons{
+        width: 30%;
+    }
+    .footerInfo{
+        width: 55%;
+    }
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+
+}
